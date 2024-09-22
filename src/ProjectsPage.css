@@ -1,0 +1,128 @@
+
+.projects-container {
+  padding: 40px;
+  background-color: #161616;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color:white;
+}
+.projects-container #id3{
+   margin-top: 500px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-card {
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.7s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-50px);
+}
+
+.project-card h2 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.technologies {
+  margin-bottom: 20px;
+}
+
+.technology {
+  display: inline-block;
+  background-color:#2d2d2d;
+  border-style: solid;
+  border-color:#6c2f3d;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.technology:hover {
+  background-color:#6c2f3d;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #ffffff;
+  background-color:#6c2f3d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  background-color: #bc1d2a;
+}
+
+
+@media (max-width: 768px) {
+  .projects-container h1 {
+    font-size: 28px;
+  }
+
+  .project-card h2 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    padding: 20px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card h2 {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 12px;
+  }
+
+  .technology {
+    font-size: 12px;
+  }
+
+  .project-link {
+    font-size: 14px;
+  }
+}
